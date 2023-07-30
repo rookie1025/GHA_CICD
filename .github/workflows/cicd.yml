@@ -55,6 +55,6 @@ jobs:
       
     - name: docker build and push
       run: |
-        docker build  -t 43.205.214.203:8083/javaapp:${{ github.run.number }} .
-        docker push 43.205.214.203:8083/javaapp:${{ github.run.number }}
-        docker rmi 43.205.214.203:8083/javaapp:${{ github.run.number }}
+        docker build  -t 43.205.214.203:8083/javaapp:${{ github.run_number }} .
+        docker push 43.205.214.203:8083/javaapp:${{ github.run_number }}
+        docker rmi 43.205.214.203:8083/javaapp:${{ github.run_number }}
